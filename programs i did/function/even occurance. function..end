@@ -1,0 +1,15 @@
+declare function EVEN(n)
+CLS
+INPUT "Enter a number"; n
+PRINT "The occurrence of even digit is "; EVEN(n); "times"
+END
+
+FUNCTION EVEN (n)
+    FOR i = 1 TO LEN(n)
+        r = n MOD 10
+        IF r MOD 2 = 0 THEN
+            E = E + 1
+        END IF
+    NEXT i
+    EVEN = E
+END FUNCTION
